@@ -14,12 +14,12 @@
 				<label>{{question.question}}</label>
 
 				<div ng-if="question.type == 'bool'">
-					<input type="radio" name="answer{{question.id}}" value="0" ng-model="answers[question.id].answer"><label>No</label>
-					<input type="radio" name="answer{{question.id}}" value="1" ng-model="answers[question.id].answer"><label>Yes</label>
+                    <input type="radio" name="answer{{question.id}}" value="1" ng-model="answers[question.id]"><label>Yes</label>
+					<input type="radio" name="answer{{question.id}}" value="0" ng-model="answers[question.id]"><label>No</label>					
 				</div>
 
 				<div ng-if="question.type == 'text'">
-					<textarea ng-model="answers[question.id].answer"></textarea>
+					<textarea ng-model="answers[question.id]"></textarea>
 				</div>
 			</div>
 

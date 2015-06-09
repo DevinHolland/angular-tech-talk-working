@@ -15,7 +15,7 @@ angular.module('tech-talk')
 			angular.forEach(answers, function(answer, questionId){
 				promises.push(
 					AnswersResource.save(questionId, {
-						answer: answer.answer,
+						answer: answer,
 						question_id: questionId	
 					})
 				);
